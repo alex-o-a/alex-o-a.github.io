@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
+
+
+#Annimation {
+	/* position: absolute; */
+	margin: auto;
+	/* width: 100vw; */
+	height: 0px;
+	margin-top: 20px;
+	/* top: 0; */
+	/* bottom: 0; */
+	filter: url(#threshold) blur(0.6px);
+    align-items: center;
+    display: flex;
+}
+
+#text1, #text2 {
+	position: absolute;
+	width: 100%;
+    color: rgb(199, 199, 199);
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	text-align: center;
+	user-select: none;
+}
+
+@media (max-width: 550px){
+    
+    #text1, #text2 {
+		font-size: 25px;
+	}
+}

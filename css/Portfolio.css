@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    cursor: none;
+    scroll-behavior: smooth;
+}
+
+/* .main{
+    scroll-behavior: smooth;
+} */
+
+/*Kevin Powell - Create custom scrollbars using CSS: https://www.youtube.com/watch?v=lvKK2fs6h4I */
+::-webkit-scrollbar {
+    width: 0.8vw;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(121, 121, 121, 0.473);
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(121, 121, 121);
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(201, 201, 201, 0);
+    margin-block: 0.3em;
+}
+
+
+
+body {
+    /* background: rgb(233, 233, 233); */
+    background: rgb(240, 240, 240);
+}
+
+section {
+    /* height: 100vh; */
+    scroll-snap-align: start;
+}
+
+.content{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.one{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: red; */
+    margin-top: -58px;
+    height: 100vh;
+}
+
+.one h1{
+    font-size: 40px;
+}
+
+.one p{
+    max-width: 550px;
+    line-height: 25px;
+    color: rgb(168, 168, 168);
+}
+
+.contactbtn {
+    display: inline-block;
+    background: rgb(240, 240, 240);
+    box-shadow: -8px -8px 8px rgba(255, 255, 255, 0.644), 8px 8px 8px rgba(20, 20, 20, 0.082);
+    /* box-shadow: inset 8px 8px 8px rgba(87, 87, 87, 0.11), inset 8px 8px 8px rgba(255, 255, 255, 0.993);  */
+    /* box-shadow: -8px -8px 8px rgba(255, 255, 255, 0.644), 8px 8px 8px rgba(20, 20, 20, 0.082), inset 8px 8px 8px rgba(87, 87, 87, 0), inset 8px 8px 8px rgba(255, 255, 255, 0); */
+    color: rgb(255, 0, 0);
+    padding: 10px 59px;
+    font-weight: bold;
+    margin: 30px 0;
+    border-radius: 10px;
+    /* transition: box-shadow 0.5s ease-in-out; */
+    /* transition: color 1s; */
+    transition: box-shadow 0.4s, font-size 0.4s, color 0.4s ease-in-out;
+    /* transition: font-weight 1s; */
+    cursor: pointer;
+    
+}
+
+
+.contactbtn:hover{
+    box-shadow: -8px -8px 8px rgba(255, 255, 255, 0), 8px 8px 8px rgba(20, 20, 20, 0);
+    /* box-shadow: -8px -8px 8px rgba(255, 255, 255, 0), 8px 8px 8px rgba(20, 20, 20, 0), inset -8px -8px 8px rgb(255, 255, 255), inset 8px 8px 8px rgba(59, 59, 59, 0.055); */
+    transition: box-shadow 0.4s, font-size 0.4s, color 0.4s ease-in-out;
+    /* font-weight: lighter; */
+    color: rgb(255, 145, 145);
+    /* transition: font-size 0.4s ease-in-out; */
+    font-size: 97%;
+}
+
+
+.two{
+    /* background: blue; */
+    align-items: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    box-shadow: inset 15px 15px 15px rgba(87, 87, 87, 0.11), inset -15px -15px 15px rgba(255, 255, 255, 0.993); 
+    border-radius: 20px;
+    margin: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 90%;
+    max-width: 1600px;
+    margin:auto;
+}
+
+.two h1{
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 50px;
+}
+
+/* neumorphism */
+/* .two .neumorphism { */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* background: rgb(240, 240, 240); */
+    /* width: 95%; */
+    /* height: 95%; */
+    /* box-shadow: inset 15px 15px 15px rgba(87, 87, 87, 0.11), inset -15px -15px 15px rgba(255, 255, 255, 0.993); */
+    /* border-radius: 20px; */
+/* } */
+
+.neumorphism p{
+    margin-top: 2%;
+    margin-bottom: 6.5%;
+}
+
+.twoskills{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.left{
+    text-align: left;
+    transform: translateX(20%);
+    /* width: 90%; */
+}
+
+.right {
+    /* max-width: 300px;
+    min-width: 300px; */
+    transform: translateX(-8%);
+}
+
+.left h2 {
+    padding-top: 9%;
+    /* padding-bottom:10px; */
+    color: grey;
+    font-size: 21px;
+}
+
+.left h2:first-child{
+    padding-top: 40px;
+}
+
+
+.left p:last-child{
+    padding-bottom: 10%;
+}
+
+.left p{
+    color: rgb(168, 168, 168);
+}
+
+
+
+.three h1{
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+.four h1{
+    text-align: center;
+}
+
+.four .folio{
+    width: 60%;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 20px;
+    line-height: 20px;
+}
+
+.four .folio p{
+    line-height: 25px;
+}
+
+
+.five h1{
+    text-align: center;
+}
+
+.five p{
+    width: 60%;
+    max-width: 700px;
+    margin: auto;
+    line-height: 20px;
+
+}
+
+
+.six h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.six ul{
+    list-style: none;
+}
+
+.six li{
+    /* padding-left: 10rem; */
+    /* text-indent: 2rem; */
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+
+.six li::before{
+    content:"\1F30D";
+}
+.six li:nth-child(5n+1)::before {
+    /* content: "\1F30D"; */
+    content: "\1F9A4";
+}
+.six li:nth-child(5n+2)::before {
+    content: "\1F4CD";
+}
+.six li:nth-child(5n+3)::before {
+    content: "\2708";
+}
+.six li:nth-child(5n+4)::before {
+    content: "\1F393";
+}
+
+.six .me-list{
+    width: 60%;
+    max-width: 700px;
+    margin: auto;
+}
+.six .me-list .contactbtn {
+    justify-content: center;
+}
+
+
+@media (min-width: 1270px) and (max-width: 1366px)  {
+
+    .four .folio{
+        max-width: 600px;
+        margin: auto;
+        margin-top: 20px;
+        line-height: 20px;
+    }
+    
+
+    .five p{
+        max-width: 600px;
+        margin: auto;
+        line-height: 20px;
+    
+    }
+
+    .six .me-list{
+        max-width: 600px;
+        margin: auto;
+    }
+    
+
+    .left{
+        transform: translateX(0%);
+    }
+}
+
+@media (max-width: 1269px) {
+    .right{
+        display: none;
+    }
+
+    .left{
+        text-align: center;
+        transform: translateX(0%);
+    }
+}
+
+@media (max-width: 600px){
+    .left{
+        width: 90%;
+    }
+}
+
+@media (max-width: 550px){
+    
+    .one .intro{
+        margin: auto;
+        width: 80%;
+    }
+
+    .one h1{
+        font-size: 30px;
+    }
+    
+    .left{
+        width: 90%;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+/* Max - anything below it will take the property
+Min - anything above that will take that property
+*/

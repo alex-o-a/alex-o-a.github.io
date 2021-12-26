@@ -1,0 +1,68 @@
+.social{
+    display: flex;
+    justify-content: center;
+}
+
+.sci{
+    /* position: relative; */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    transform:translateY(-25%);
+}
+
+.sci li{
+    list-style: none;
+}
+
+.sci li a{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(199, 199, 199);
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 1.5em;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    /* box-shadow: 10px 20px 35px rgba(173, 173, 173, 0.384); */
+    box-shadow: -8px -8px 8px rgba(255, 255, 255, 0.644), 8px 8px 8px rgba(20, 20, 20, 0.082);
+    transition: background 0.5s;
+}
+
+.js-tilt-glare{
+    border-radius: 10px;
+}
+
+.sci li a:hover.instragram{
+    /* background: rgb(224, 58, 169); */
+    background: linear-gradient(217deg, rgba(130, 52, 175, 0.459), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgb(99, 107, 202), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(221, 42, 123), rgba(184, 49, 49, 0) 70.71%),
+            linear-gradient(-150deg, rgb(240, 27, 27), rgb(254, 218, 119) 70.71%);
+}
+/* rgba(255,0,0,.8) */
+
+.sci li a:hover.linkedin{
+    background: rgb(88, 153, 214);
+}
+
+.sci li a:hover.github{
+    background: rgb(0, 0, 0);
+}
+
+.sci li a .fa {
+    transition: 0.25s;
+    pointer-events: none;
+}
+
+.sci li a:hover .fa{
+    color: cornsilk;
+    transform: scale(1.2) translateZ(30px);
+}

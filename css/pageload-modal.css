@@ -32,10 +32,17 @@
 @media (max-width: 525px){
     .popup{
         width: 80%;
-        font-size: 14px;
+        font-size: 12px;
         min-width: 300px;
     }
 }
+
+/* @media (max-height: 660){
+    .popup{
+        height: 95%;
+    }
+
+} */
 
 .popup button{
     display: block;

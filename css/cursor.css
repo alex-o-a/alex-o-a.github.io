@@ -12,3 +12,9 @@
     pointer-events: none;
     background:rgba(212, 124, 124, 0.377);
 }
+
+@media (pointer:coarse) {
+    .cursor {
+        display: none;
+    }
+}
